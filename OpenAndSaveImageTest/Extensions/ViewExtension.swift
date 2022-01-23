@@ -10,7 +10,7 @@ import SwiftUI
 
 extension View {
     func imageRepresentation(rect: CGRect) -> NSBitmapImageRep? {
-        let hosting = NSHostingView(rootView: self.frame(width: rect.width, height: rect.height))
+        let hosting = NSHostingView(rootView: self)
         hosting.setFrameSize(rect.size)
         hosting.setBoundsSize(rect.size)
         hosting.layout()

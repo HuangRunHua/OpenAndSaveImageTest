@@ -61,11 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				BD4CFF45279D548000D23D7E /* OpenAndSaveImageTestApp.swift */,
-				BD4CFF55279D549E00D23D7E /* ConvertImageToPNG.swift */,
-				BD4CFF5A279D54B500D23D7E /* ImageData.swift */,
-				BD4CFF58279D54AE00D23D7E /* CoverImageVIew.swift */,
-				BD4CFF5C279D54BC00D23D7E /* PhotoTestView.swift */,
-				BD4CFF54279D549E00D23D7E /* ViewExtension.swift */,
+				BD4CFF5F279D55EF00D23D7E /* Data */,
+				BD4CFF5E279D55E000D23D7E /* Extensions */,
+				BD4CFF60279D55F900D23D7E /* View */,
 				BD4CFF49279D548100D23D7E /* Assets.xcassets */,
 				BD4CFF4E279D548100D23D7E /* OpenAndSaveImageTest.entitlements */,
 				BD4CFF4B279D548100D23D7E /* Preview Content */,
@@ -79,6 +77,32 @@
 				BD4CFF4C279D548100D23D7E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD4CFF5E279D55E000D23D7E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BD4CFF54279D549E00D23D7E /* ViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD4CFF5F279D55EF00D23D7E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BD4CFF55279D549E00D23D7E /* ConvertImageToPNG.swift */,
+				BD4CFF5A279D54B500D23D7E /* ImageData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BD4CFF60279D55F900D23D7E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BD4CFF58279D54AE00D23D7E /* CoverImageVIew.swift */,
+				BD4CFF5C279D54BC00D23D7E /* PhotoTestView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
