@@ -11,7 +11,6 @@ import UniformTypeIdentifiers
 struct PhotoTestView: View {
     
     @State private var imageUrl: URL = URL(fileURLWithPath: "")
-        // @State var imageData: Data?
     
     @EnvironmentObject var imageData: ImageData
     
@@ -28,6 +27,7 @@ struct PhotoTestView: View {
                         imageUrl = openURL
                         if let codedImages = try? Data(contentsOf: openURL) {
                             imageData.imagedata = codedImages
+                            // ImageProcess().saveImageToApp(data: codedImages)
                         }
                     }
                 }, label: {

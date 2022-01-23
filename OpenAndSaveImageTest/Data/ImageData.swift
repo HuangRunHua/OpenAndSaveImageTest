@@ -10,4 +10,5 @@ import SwiftUI
 
 class ImageData: NSObject, ObservableObject {
     @Published var imagedata: Data = Data()
+    @Published var imageName: String = ""
 }

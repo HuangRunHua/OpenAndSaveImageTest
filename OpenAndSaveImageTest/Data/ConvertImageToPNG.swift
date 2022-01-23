@@ -41,4 +41,15 @@ struct ImageProcess {
         }
          // print(imageData)
     }
+    
+    func saveImageToApp(data: Data) {
+        let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let url = documents.appendingPathComponent("example.png")
+        do {
+            try data.write(to: url)
+        } catch {
+            print("Unable to Write Image Data to Disk")
+        }
+    }
+    
 }
