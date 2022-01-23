@@ -11,7 +11,7 @@ import SwiftUI
 struct OpenAndSaveImageTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhotoTestView().environmentObject(ImageData())
         }
     }
 }
