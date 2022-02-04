@@ -9,6 +9,9 @@ import Foundation
 import SwiftUI
 
 struct ImageProcess {
+    
+    @StateObject var imageData = ImageData()
+    
     func showOpenPanel() -> URL? {
         let openPanel = NSOpenPanel()
         openPanel.allowedContentTypes = [.image]
@@ -33,23 +36,23 @@ struct ImageProcess {
         return response == .OK ? savePanel.url : nil
     }
     
-    func saveImage() {
-        let view = CoverImageView().environmentObject(ImageData())
-        let imageData = view.asPngData(rect: CGRect.init(x: 0, y: 0, width: 1024, height: 768))
-        if let url = saveURL() {
-            try? imageData!.write(to: url)
-        }
-         // print(imageData)
-    }
-    
-    func saveImageToApp(data: Data) {
-        let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        let url = documents.appendingPathComponent("example.png")
-        do {
-            try data.write(to: url)
-        } catch {
-            print("Unable to Write Image Data to Disk")
-        }
-    }
+//    func saveImage(view: View) {
+//        // let view = CoverImageView().environmentObject(imageData)
+//        let imageData = view.asPngData(rect: CGRect.init(x: 0, y: 0, width: 1024, height: 768))
+//        if let url = saveURL() {
+//            try? imageData!.write(to: url)
+//        }
+//         // print(imageData)
+//    }
+//    
+//    func saveImageToApp(data: Data) {
+//        let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+//        let url = documents.appendingPathComponent("example.png")
+//        do {
+//            try data.write(to: url)
+//        } catch {
+//            print("Unable to Write Image Data to Disk")
+//        }
+//    }
     
 }
