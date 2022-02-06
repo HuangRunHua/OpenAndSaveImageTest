@@ -22,7 +22,6 @@ struct ImageProcess {
         return response == .OK ? openPanel.url : nil
     }
     
-    
     func saveURL() -> URL? {
         let savePanel = NSSavePanel()
         savePanel.allowedContentTypes = [.png]

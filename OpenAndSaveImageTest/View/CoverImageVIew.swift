@@ -16,8 +16,8 @@ struct CoverImageView: View {
             Rectangle()
                 .frame(width: 512, height: 600)
                 .foregroundColor(.blue)
-            
-            Image(nsImage: (NSImage(data: imageData.imagedata) ?? NSImage(byReferencing: URL(fileURLWithPath: ""))))
+
+            Image(nsImage: NSImage(byReferencing: imageData.url))
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 512, height: 512)

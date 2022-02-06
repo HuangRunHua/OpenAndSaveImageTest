@@ -10,8 +10,6 @@ import UniformTypeIdentifiers
 
 struct PhotoTestView: View {
     
-    @State private var imageUrl: URL = URL(fileURLWithPath: "")
-    
     @EnvironmentObject var imageData: ImageData
     
     var body: some View {
@@ -24,11 +22,7 @@ struct PhotoTestView: View {
             HStack {
                 Button(action: {
                     if let openURL = ImageProcess().showOpenPanel() {
-                        imageUrl = openURL
-                        if let codedImages = try? Data(contentsOf: openURL) {
-                            imageData.imagedata = codedImages
-                            // ImageProcess().saveImageToApp(data: codedImages)
-                        }
+                        imageData.url = openURL
                     }
                 }, label: {
                     Image(systemName: "doc.badge.plus")

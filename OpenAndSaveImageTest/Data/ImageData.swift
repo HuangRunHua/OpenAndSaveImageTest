@@ -9,6 +9,5 @@ import Foundation
 import SwiftUI
 
 class ImageData: NSObject, ObservableObject {
-    @Published var imagedata: Data = Data()
-    @Published var imageName: String = ""
+    @Published var url: URL = URL(fileURLWithPath: "")
 }
