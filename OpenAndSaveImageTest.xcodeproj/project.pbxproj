@@ -15,6 +15,7 @@
 		BD4CFF59279D54AE00D23D7E /* CoverImageVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CFF58279D54AE00D23D7E /* CoverImageVIew.swift */; };
 		BD4CFF5B279D54B500D23D7E /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CFF5A279D54B500D23D7E /* ImageData.swift */; };
 		BD4CFF5D279D54BC00D23D7E /* PhotoTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4CFF5C279D54BC00D23D7E /* PhotoTestView.swift */; };
+		BD85558C27AF7E9A004DEE2E /* ImageImportFromDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD85558B27AF7E9A004DEE2E /* ImageImportFromDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BD4CFF58279D54AE00D23D7E /* CoverImageVIew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverImageVIew.swift; sourceTree = "<group>"; };
 		BD4CFF5A279D54B500D23D7E /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		BD4CFF5C279D54BC00D23D7E /* PhotoTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTestView.swift; sourceTree = "<group>"; };
+		BD85558B27AF7E9A004DEE2E /* ImageImportFromDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageImportFromDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				BD4CFF55279D549E00D23D7E /* ConvertImageToPNG.swift */,
+				BD85558B27AF7E9A004DEE2E /* ImageImportFromDevice.swift */,
 				BD4CFF5A279D54B500D23D7E /* ImageData.swift */,
 			);
 			path = Data;
@@ -181,6 +184,7 @@
 				BD4CFF57279D549E00D23D7E /* ConvertImageToPNG.swift in Sources */,
 				BD4CFF46279D548000D23D7E /* OpenAndSaveImageTestApp.swift in Sources */,
 				BD4CFF5B279D54B500D23D7E /* ImageData.swift in Sources */,
+				BD85558C27AF7E9A004DEE2E /* ImageImportFromDevice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

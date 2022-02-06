@@ -13,5 +13,8 @@ struct OpenAndSaveImageTestApp: App {
         WindowGroup {
             PhotoTestView().environmentObject(ImageData())
         }
+        .commands {
+            ImportFromDevicesCommands()
+        }
     }
 }

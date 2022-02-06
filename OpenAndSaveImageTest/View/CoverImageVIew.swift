@@ -21,6 +21,13 @@ struct CoverImageView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 512, height: 512)
+                .importsItemProviders(ImageImportFromDevice.importImageTypes) { providers in
+                    ImageImportFromDevice.importImageFromProviders(providers) { url in
+                        if let url = url {
+                            imageData.url = url
+                        }
+                    }
+                }
         }
     }
 }
